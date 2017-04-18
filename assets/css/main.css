@@ -5,53 +5,90 @@
 
 body{
   background-color: #1D1A05;
+  margin: 0px;
 }
 
-.contenido{
-  align-items: center;
-}
-
-/*navegador*/
-.opciones{
+/*encabezado*/
+header{
+  position: fixed;
   background-color: #CA3C25;
-  margin: 0;
+  width: 100%;
+  top: 0;
+}
+
+.box-opciones{
+  padding: 0 200px;
 }
 
 li{
   display: inline-block;
-  padding: 20px;
+  padding: 20px 5px;
   list-style: none;
   margin: 0;
 }
 
 a{
-  color: whitesmoke;
-  text-decoration: none;
-  padding: 10px;
+  color: rgb(245, 222, 153);
+  /*text-decoration: none;*/
+  padding: 5px;
 }
 
 a:hover{
   color: rgb(159, 159, 159);
 }
 
-/*contenido*/
-.contenido{
-  background-color: #1D1A05;
-}
-
 /*fotos*/
 .fotos{
-  margin: 0px;
+  position: relative;
+  top: 80px;
+  left: 220px;
+}
+
+img{
+  width: 150px;
+  height: 150px;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+}
+
+.foto-box{
+  display: inline-block;
+  border: 2px solid rgb(159, 159, 159);
+  margin: 0px 10px;
 }
 
 /*botones*/
-.botones {
-  align-items: center;
-  margin: 20px;
+.box-boton {
+  position: relative;
+  top: 80px;
+  left: 220px;
+  margin: 40px 0px;
 }
+
 .boton{
   border: 0px solid #CA3C25;
   background-color: #CA3C25;
-  padding: 10px;
+  padding: 5px 80px;
+  right: 0px;
   color: rgb(245, 222, 153);
+}
+
+/*texto*/
+.texto{
+  position: relative;
+  top: 60px;
+  text-align:justify;
+  overflow: hidden;
+  left: 180px
+}
+
+.box-texto{
+  display: inline-block;
+  width: 350px;
+  height: 200px;
+  padding: 0px 20px;
+  font-size: 14px;
 }
